@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Price Prediction</h1>
+<form action="/calculate" method="post">
+    <div class="form-group">
+        <label for="source">From:</label>
+        <input type="text" class="form-control" id="source" name="source" required>
+    </div>
+    <div class="form-group">
+        <label for="destination">To:</label>
+        <input type="text" class="form-control" id="destination" name="destination" required>
+    </div>
+    <div class="form-group">
+        <label for="cab_type">Cab Type:</label>
+        <select class="form-control" id="cab_type" name="cab_type">
+            <option value="Standard">Standard</option>
+            <option value="Luxury">Luxury</option>
+            <option value="SUV">SUV</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Calculate Price</button>
+</form>
+{% endblock %}
