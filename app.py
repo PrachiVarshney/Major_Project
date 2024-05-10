@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request
+from flask import url_for
 import pandas as pd
 
 app = Flask(__name__)
-df = pd.read_csv(r'D:\ll\rideshare_kaggle.csv')
-
+df = pd.read_csv(r'D:\Project\rideshare_kaggle.csv')
 
 @app.route('/')
 def index():
@@ -13,13 +13,13 @@ def index():
 def price_prediction():
     return render_template('price_prediction.html')
 
-@app.route('/weather_check')
-def weather_check():
-    return render_template('weather_check.html')
+@app.route('/analysis_insights')
+def analysis_insights():  # Updated route for Analysis Insights
+    return render_template('analysis_insights.html')
 
-@app.route('/cab_type')
-def cab_type():
-    return render_template('cab_type.html')
+@app.route('/Blog')
+def Blog():  # Updated route for Blog
+    return render_template('Blog.html')
 
 @app.route('/calculate', methods=['POST'])
 def calculate_price():
