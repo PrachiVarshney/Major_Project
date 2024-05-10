@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Uber Data Insights</h1>
+        <p class="lead">Unlock the secrets hidden within Uber's vast ride-sharing data. Dive into our interactive visualizations and detailed analysis to gain a deeper understanding of how people travel with Uber.</p>
+    </div>
+
+    <div class="section">
+        <h3>Check how long do people travel with Uber?</h3>
+        <img src="https://i.postimg.cc/ryDqM0CV/2.png" class="img-fluid">
+    </div>
+
+    <div class="section">
+        <h3>What Hour Do Most People Take Uber To Their Destination?</h3>
+        <img src="https://i.postimg.cc/7LzQK4gy/3.png" class="img-fluid">
+    </div>
+
+    <div class="section">
+        <h3>Check The Purpose Of Trips?</h3>
+        <img src="https://i.postimg.cc/mDv98xNK/4.png" class="img-fluid">
+    </div>
+
+    <div class="section">
+        <h3>Which Day Has The Highest Number of Trip?</h3>
+        <img src="https://i.postimg.cc/FRyF52XM/5.png" class="img-fluid">
+    </div>
+
+    <div class="section">
+        <h3>What are the number of trips per each day?</h3>
+        <img src="https://i.postimg.cc/NFKNrwGV/6.png" class="img-fluid">
+    </div>
+
+    <div class="section">
+        <h3>What are the trips in the month?</h3>
+        <img src="https://i.postimg.cc/d1bWdx7V/7.png" class="img-fluid">
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+        color: #333;
+    }
+
+    .jumbotron {
+        background-color: #6c757d; /* Light shade of blue */
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .jumbotron p {
+        font-size: 1.25rem;
+    }
+
+    .section {
+        margin-bottom: 3rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        background-color: #6c757d; /* Light shade of blue */
+        color: #fff;
+        padding: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+</style>
+
+{% endblock %}
