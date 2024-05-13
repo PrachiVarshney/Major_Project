@@ -4,32 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uber Data Analysis</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="/">Home</a>
+            <a class="navbar-brand" >Uber Data Analysis</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/price_prediction">Price Prediction</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/analysis_insights">Analysis Insights</a>
                     </li>
-                    
                     <li class="nav-item">
-                        <a class="nav-link" href="/Blog"
-                        >Blog/News
-                        </a>
+                        <a class="nav-link" href="/blog">Blog/News</a>
                     </li>
                 </ul>
             </div>
