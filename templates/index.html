@@ -2,106 +2,118 @@
 <!-- {% block title %}Welcome to Uber Data Analysis{% endblock %} -->
 {% block content %}
 <style>
-    body {
-        font-family: 'Helvetica Neue', sans-serif;
-        background-color: #f2f2f2;
-    }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
 
-    .hero-section {
-        background-color: #1a1a1a;
-        color: #fff;
-        padding: 80px 0;
-        text-align: center;
-    }
+  .hero-section {
+    background-color: #181a1b1c;
+    color: #333;
+    padding: 80px 0;
+    text-align: center;
+  }
 
-    .hero-section h1 {
-        font-size: 48px;
-        font-weight: 700;
-        margin-bottom: 20px;
-    }
+  .hero-section h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
 
-    .hero-section p {
-        font-size: 24px;
-        margin-bottom: 40px;
-    }
+  .hero-section p {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
 
-    .content-section {
-        padding: 80px 0;
-    }
+  .content-section {
+    padding: 60px 0;
+  }
 
-    .content-section h2 {
-        font-size: 36px;
-        font-weight: 700;
-        margin-bottom: 20px;
-    }
+  .content-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
 
-    .content-section p {
-        font-size: 18px;
-        line-height: 1.6;
-        margin-bottom: 30px;
-    }
+  .content-section p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
 
-    .btn-primary {
-        background-color: #1a1a1a;
-        border-color: #1a1a1a;
-        padding: 12px 24px;
-        font-size: 18px;
-        font-weight: 700;
-        border-radius: 4px;
-    }
+  .btn-primary {
+    background-color: #1a1a1a;
+    border-color: #1a1a1a;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+  }
 
-    .btn-primary:hover {
-        background-color: #333;
-        border-color: #333;
-    }
+  .btn-primary:hover {
+    background-color: #333;
+    border-color: #333;
+  }
+
+  .large-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
 </style>
+
 <div class="hero-section">
-    <div class="container">
-        <h1>Go anywhere with Uber</h1>
-        <p>Request a ride, hop in, and go.</p>
-        <!-- <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Enter location" aria-label="Enter location" aria-describedby="basic-addon2">
-            <input type="text" class="form-control" placeholder="Enter destination" aria-label="Enter destination" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button class="btn btn-primary" type="button">See prices</button>
-            </div> -->
-        </div>
-    </div>
+  <div class="container">
+    <h1>Go anywhere with Uber</h1>
+    <p>Request a ride, hop in, and go.</p>
+    <!-- <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Enter location" aria-label="Enter location" aria-describedby="basic-addon2">
+      <input type="text" class="form-control" placeholder="Enter destination" aria-label="Enter destination" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button">See prices</button>
+      </div>
+    </div> -->
+  </div>
 </div>
+
 <div class="content-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>How Does Uber Pricing Work?</h2>
-                <p>If you request a ride on Saturday night, you may find that the price is different from the cost of the same trip a few days earlier. That's because of Uber's dynamic pricing algorithm, which converts prices according to several variables, such as the time and distance of your route, traffic, and the current need of the driver. In some cases, this may mean a temporary increase in price during very busy times.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="https://i.postimg.cc/VkjNrFnS/Uber-driver-holds-smartphone-in-car.webp" alt="Uber Driver" class="img-fluid">
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>How Does Uber Pricing Work?</h2>
+        <p>If you request a ride on Saturday night, you may find that the price is different from the cost of the same trip a few days earlier. That's because of Uber's dynamic pricing algorithm, which converts prices according to several variables, such as the time and distance of your route, traffic, and the current need of the driver. In some cases, this may mean a temporary increase in price during very busy times.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://i.postimg.cc/VkjNrFnS/Uber-driver-holds-smartphone-in-car.webp" alt="Uber Driver" class="img-fluid large-image">
+      </div>
     </div>
+  </div>
 </div>
+
 <div class="content-section bg-light">
-    <div class="container">
-        <h2>Why Are Uber Rates Changing?</h2>
-        <p>As demand increases, Uber uses flexible costs to encourage more drivers to get on the road and help address a number of passenger requests. When we inform you of an increase in Uber fees, we also inform drivers. If you decide to proceed and request your ride, you will receive a warning in the app to make sure you know that ratings have changed.</p>
-    </div>
+  <div class="container">
+    <h2>Why Are Uber Rates Changing?</h2>
+    <p>As demand increases, Uber uses flexible costs to encourage more drivers to get on the road and help address a number of passenger requests. When we inform you of an increase in Uber fees, we also inform drivers. If you decide to proceed and request your ride, you will receive a warning in the app to make sure you know that ratings have changed.</p>
+  </div>
 </div>
+
 <div class="content-section">
-    <div class="container">
-        <h2>Price Range</h2>
-        <p>When more drivers enter the road and board requests have been taken, the need will be more manageable, and the fare should return to normal.</p>
-    </div>
+  <div class="container">
+    <h2>Price Range</h2>
+    <p>When more drivers enter the road and board requests have been taken, the need will be more manageable, and the fare should return to normal.</p>
+  </div>
 </div>
+
 <div class="content-section bg-light">
-    <div class="container">
-        <h2>Uber Top Hours</h2>
-        <p>If you're a regular passenger, you're probably already familiar with Uber's peak times when rising demand and prices are very likely. These include:</p>
-        <ul>
-            <li>Friday and Saturday nights</li>
-            <li>After-work rush hour</li>
-            <li>Major events and celebrations</li>
-        </ul>
-    </div>
+  <div class="container">
+    <h2>Uber Top Hours</h2>
+    <p>If you're a regular passenger, you're probably already familiar with Uber's peak times when rising demand and prices are very likely. These include:</p>
+    <ul>
+      <li>Friday and Saturday nights</li>
+      <li>After-work rush hour</li>
+      <li>Major events and celebrations</li>
+    </ul>
+  </div>
 </div>
 {% endblock %}
